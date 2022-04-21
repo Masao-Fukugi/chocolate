@@ -1,0 +1,240 @@
+@charset "UTF-8";
+body {
+  background-color: #D70020;
+}
+
+#choco .block__ttl {
+  color: #000;
+  font-size: 64px;
+  font-weight: bold;
+  font-family: YuMincho, sans-serif;
+}
+
+#choco .block__ttl span {
+  color: #000;
+  font-size: 45px;
+}
+
+#choco .block__txt {
+  color: #fff;
+  font-size: 15px;
+  font-family: YuMincho, sans-serif;
+}
+
+#choco .block__txt span {
+  display: block;
+  margin-top: 20px;
+  width: 375px;
+  height: 2px;
+  background-color: #e8d699;
+}
+
+#choco .block__search {
+  margin-left: 0;
+  width: 400px;
+}
+
+#choco .block__logo--jpn {
+  position: absolute;
+  left: 475px;
+  top: 140px;
+  width: 400px;
+}
+
+#choco .block__logo--eng {
+  position: absolute;
+  left: 460px;
+  top: 430px;
+  z-index: -10;
+  width: 400px;
+}
+
+#choco .block__img {
+  width: 100%;
+}
+
+#choco .choco__ttl {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+#choco .choco__logo {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+#choco .wrap {
+  position: relative;
+  padding: 30px 15px;
+  margin: 0 auto;
+  width: 1010px;
+}
+
+#choco .wrap--flex {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 15px;
+  margin: 0 auto;
+  width: 980px;
+}
+
+#choco .material {
+  width: 485px;
+  background-color: #D70020;
+  border: solid 1px #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#choco .material__ttl {
+  display: inline;
+  color: #fff;
+  font-size: 16px;
+}
+
+#choco .material__ttl::before {
+  content: "●";
+}
+
+#choco .material__ttl::after {
+  content: " :";
+}
+
+#choco .material__txt {
+  display: inline;
+  color: #fff;
+  font-size: 1rem;
+}
+
+#choco .material__txt--comma {
+  display: inline;
+  color: #fff;
+  font-size: 1rem;
+}
+
+#choco .material__txt--comma::after {
+  content: "、";
+}
+
+#choco .info {
+  position: relative;
+  width: 485px;
+}
+
+#choco .info__list {
+  display: inline;
+  color: #fff;
+  font-size: 18px;
+  text-align: justify;
+}
+
+#choco .info__list::before {
+  content: "●";
+}
+
+#choco .info__list span {
+  font-size: 1rem;
+}
+
+#choco .info__list--allergy {
+  color: #fff;
+  background-color: #0891fb;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+#choco .info__list--allergy span {
+  padding: 2px;
+  margin-left: 5px;
+  color: #000;
+  background-color: #fff;
+}
+
+#choco .quantity {
+  position: absolute;
+  left: 190px;
+  bottom: 0;
+}
+
+#choco .quantity__txt {
+  color: #fff;
+  font-size: 18px;
+}
+
+#choco .recycle__logo {
+  position: absolute;
+  left: 250px;
+  bottom: 20px;
+  width: 175px;
+}
+
+#choco .nutrition {
+  width: 490px;
+  background-color: #D70020;
+}
+
+#choco .nutrition__ttl {
+  color: #fff;
+  border: solid 1px #fff;
+  text-align: center;
+  font-size: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#choco .nutrition__row:last-child {
+  border-bottom: solid 1px #fff;
+}
+
+#choco .nutrition__detail {
+  padding: 0 5px;
+  border-right: solid 1px #fff;
+}
+
+#choco .nutrition__detail:nth-child(odd) {
+  border-left: solid 1px #fff;
+}
+
+#choco .nutrition__name {
+  float: left;
+  color: #fff;
+  font-size: 18px;
+}
+
+#choco .nutrition__txt {
+  color: #fff;
+  text-align: right;
+  font-size: 18px;
+}
+
+#choco .polyphenol__menu {
+  padding: 5px 0;
+  border-bottom: solid 1px #fff;
+}
+
+#choco .polyphenol__list {
+  color: #fff;
+  font-size: 18px;
+}
+
+#choco .barcode__logo {
+  margin: 20px auto 0;
+  width: 400px;
+}
+
+#choco .color-y {
+  color: #f6cf18;
+}
+
+#choco .space-r {
+  display: block;
+  width: 300px;
+}
+/*# sourceMappingURL=style.css.map */

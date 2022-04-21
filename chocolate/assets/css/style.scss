@@ -1,0 +1,209 @@
+body {
+    background-color: #D70020;
+}
+
+#choco {
+    .block {
+        &__ttl {
+            color: #000;
+            font-size: 64px;
+            font-weight: bold;
+            font-family: YuMincho, sans-serif;
+            span {
+                color: #000;
+                font-size: 45px;
+            }
+        }
+        &__txt {
+            color: #fff;
+            font-size: 15px;
+            font-family: YuMincho, sans-serif;
+            span {
+                display: block;
+                margin-top: 20px;
+                width: 375px;
+                height: 2px;
+                background-color: rgb(232, 214, 153);
+            }
+        }
+        &__search {
+            margin-left: 0;
+            width: 400px;
+        }
+        &__logo {
+            &--jpn {
+                position: absolute;
+                left: 475px;
+                top: 140px;
+                width: 400px;
+            }
+            &--eng {
+                position: absolute;
+                left: 460px;
+                top: 430px;
+                z-index: -10;
+                width: 400px;
+            }
+        }
+        &__img {
+            width: 100%;
+        }
+    }
+    .choco {
+        &__ttl {
+            margin: 0 auto;
+            width: 1000px;
+        }
+        &__logo {
+            margin: 0 auto;
+            width: 1000px;
+        }
+    }
+    .wrap {
+        position: relative;
+        padding: 30px 15px;
+        margin: 0 auto;
+        width: 1010px;    
+        &--flex {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 15px;
+            margin: 0 auto;
+            width: 980px;        
+        }
+    }
+
+    .material {
+        width: 485px;
+        background-color: #D70020;
+        border: solid 1px #fff;
+        box-sizing: border-box;
+        &__ttl {
+            display: inline;
+            color: #fff;
+            font-size: 16px;
+            &::before {
+                content: "●";
+            }
+            &::after {
+                content: " :";
+            }
+        }
+        &__txt {
+            display: inline;
+            color: #fff;
+            font-size: 1rem;
+            &--comma {
+                display: inline;
+                color: #fff;
+                font-size: 1rem;
+                &::after {
+                    content: "、";
+                }
+            }
+        }
+    }
+    .info {
+        position: relative;
+        width: 485px;
+        &__list {
+            display: inline;
+            color: #fff;
+            font-size: 18px;
+            text-align: justify;
+            &::before {
+                content: "●";
+            }
+            span {
+                font-size: 1rem;
+            }
+            &--allergy {
+                color: #fff;
+                background-color: #0891fb;
+                font-size: 1.1rem;
+                font-weight: bold;
+                span {
+                    padding: 2px;
+                    margin-left: 5px;
+                    color: #000;
+                    background-color: #fff;                    
+                }
+        
+            }
+        }
+    }
+    .quantity {
+        position: absolute;
+        left: 190px;
+        bottom: 0;
+        &__txt {
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+    .recycle {
+        &__logo {
+            position: absolute;
+            left: 250px;
+            bottom: 20px;
+            width: 175px;
+        }
+    }
+    .nutrition {
+        width: 490px;
+        background-color: #D70020;
+        &__ttl {
+            color: #fff;
+            border: solid 1px #fff;
+            text-align: center;
+            font-size: 18px;
+            box-sizing: border-box;
+        }
+        &__row {
+            &:last-child {
+                border-bottom: solid 1px #fff;
+            }
+        }
+        &__detail {
+            padding: 0 5px;
+            border-right: solid 1px #fff;
+            &:nth-child(odd) {
+                border-left: solid 1px #fff;
+            }
+        }
+        &__name {
+            float: left;
+            color: #fff;
+            font-size: 18px;
+        }
+        &__txt {
+            color: #fff;
+            text-align: right;
+            font-size: 18px;
+        }
+    }
+    .polyphenol {
+        &__menu {
+            padding: 5px 0;
+            border-bottom: solid 1px #fff;
+        }
+        &__list {
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+    .barcode {
+        &__logo {
+            margin: 20px auto 0;
+            width: 400px;
+        }
+    }
+    .color-y {
+        color: #f6cf18;
+    }
+    .space-r {
+        display: block;
+        width: 300px;
+    }
+}
