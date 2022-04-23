@@ -15,39 +15,41 @@ body {
             }
         }
         &__txt {
+            margin-bottom: 20px;
             color: #fff;
             font-size: 15px;
             font-family: YuMincho, sans-serif;
-            span {
-                display: block;
-                margin-top: 20px;
-                width: 375px;
-                height: 2px;
-                background-color: rgb(232, 214, 153);
-            }
         }
-        &__search {
-            margin-left: 0;
-            width: 400px;
+        &__current {
+            display: block;
+            margin-bottom: 20px;
+            width: 375px;
+            height: 2px;
+            background-color: rgb(232, 214, 153);
         }
         &__logo {
-            &--jpn {
-                position: absolute;
-                left: 475px;
-                top: 140px;
-                width: 400px;
-            }
-            &--eng {
-                position: absolute;
-                left: 460px;
-                top: 430px;
-                z-index: -10;
-                width: 400px;
-            }
+            margin: 0;
+            width: 100%;
         }
         &__img {
             width: 100%;
         }
+    }
+    .search {
+        width: 400px;
+    }
+    .logoJpn {
+        position: absolute;
+        left: 515px;
+        top: 160px;
+        width: 400px;
+    }
+    .logoEng {
+        position: absolute;
+        left: 500px;
+        top: 425px;
+        z-index: -10;
+        width: 400px;
     }
     .choco {
         &__ttl {
@@ -64,7 +66,7 @@ body {
         padding: 30px 15px;
         margin: 0 auto;
         width: 1010px;    
-        &--flex {
+        &--detail {
             position: relative;
             display: flex;
             justify-content: space-between;
@@ -73,40 +75,32 @@ body {
             width: 980px;        
         }
     }
-
     .material {
-        width: 485px;
+        width: 480px;
         background-color: #D70020;
         border: solid 1px #fff;
         box-sizing: border-box;
-        &__ttl {
+        dt {
             display: inline;
-            color: #fff;
-            font-size: 16px;
-            &::before {
-                content: "●";
-            }
-            &::after {
-                content: " :";
-            }
         }
         &__txt {
             display: inline;
             color: #fff;
             font-size: 1rem;
-            &--comma {
-                display: inline;
-                color: #fff;
-                font-size: 1rem;
-                &::after {
-                    content: "、";
-                }
+            &::before {
+                content: "●";
             }
         }
     }
     .info {
         position: relative;
         width: 485px;
+        &__menu {
+            width: 100%;
+            &--space {
+                width: 300px;
+            }
+        }
         &__list {
             display: inline;
             color: #fff;
@@ -114,9 +108,6 @@ body {
             text-align: justify;
             &::before {
                 content: "●";
-            }
-            span {
-                font-size: 1rem;
             }
             &--allergy {
                 color: #fff;
@@ -129,8 +120,35 @@ body {
                     color: #000;
                     background-color: #fff;                    
                 }
-        
             }
+            &--space {
+                display: block;
+                color: #fff;
+                font-size: 18px;
+                    &:first-child {
+                    &::before {
+                        content: "●";
+                    }        
+                }
+                &:nth-child(2) {
+                    &::before {
+                        content: "●";
+                    }
+                }
+            }
+            dl {
+                display: inline;
+            }
+        }
+        &__ttl {
+            display: inline;
+            color: #fff;
+            font-size: 18px;
+        }
+        &__txt {
+            display: inline;
+            color: #fff;
+            font-size: 1rem;
         }
     }
     .quantity {
@@ -171,16 +189,16 @@ body {
             &:nth-child(odd) {
                 border-left: solid 1px #fff;
             }
-        }
-        &__name {
-            float: left;
-            color: #fff;
-            font-size: 18px;
-        }
-        &__txt {
-            color: #fff;
-            text-align: right;
-            font-size: 18px;
+            dt {
+                float: left;
+                color: #fff;
+                font-size: 18px;    
+            }
+            dd {
+                color: #fff;
+                text-align: right;
+                font-size: 18px;    
+            }
         }
     }
     .polyphenol {
@@ -201,9 +219,5 @@ body {
     }
     .color-y {
         color: #f6cf18;
-    }
-    .space-r {
-        display: block;
-        width: 300px;
     }
 }

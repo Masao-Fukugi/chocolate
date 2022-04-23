@@ -16,41 +16,46 @@ body {
 }
 
 #choco .block__txt {
+  margin-bottom: 20px;
   color: #fff;
   font-size: 15px;
   font-family: YuMincho, sans-serif;
 }
 
-#choco .block__txt span {
+#choco .block__current {
   display: block;
-  margin-top: 20px;
+  margin-bottom: 20px;
   width: 375px;
   height: 2px;
   background-color: #e8d699;
 }
 
-#choco .block__search {
-  margin-left: 0;
-  width: 400px;
-}
-
-#choco .block__logo--jpn {
-  position: absolute;
-  left: 475px;
-  top: 140px;
-  width: 400px;
-}
-
-#choco .block__logo--eng {
-  position: absolute;
-  left: 460px;
-  top: 430px;
-  z-index: -10;
-  width: 400px;
+#choco .block__logo {
+  margin: 0;
+  width: 100%;
 }
 
 #choco .block__img {
   width: 100%;
+}
+
+#choco .search {
+  width: 400px;
+}
+
+#choco .logoJpn {
+  position: absolute;
+  left: 515px;
+  top: 160px;
+  width: 400px;
+}
+
+#choco .logoEng {
+  position: absolute;
+  left: 500px;
+  top: 425px;
+  z-index: -10;
+  width: 400px;
 }
 
 #choco .choco__ttl {
@@ -70,7 +75,7 @@ body {
   width: 1010px;
 }
 
-#choco .wrap--flex {
+#choco .wrap--detail {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -86,25 +91,15 @@ body {
 }
 
 #choco .material {
-  width: 485px;
+  width: 480px;
   background-color: #D70020;
   border: solid 1px #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-#choco .material__ttl {
+#choco .material dt {
   display: inline;
-  color: #fff;
-  font-size: 16px;
-}
-
-#choco .material__ttl::before {
-  content: "●";
-}
-
-#choco .material__ttl::after {
-  content: " :";
 }
 
 #choco .material__txt {
@@ -113,19 +108,21 @@ body {
   font-size: 1rem;
 }
 
-#choco .material__txt--comma {
-  display: inline;
-  color: #fff;
-  font-size: 1rem;
-}
-
-#choco .material__txt--comma::after {
-  content: "、";
+#choco .material__txt::before {
+  content: "●";
 }
 
 #choco .info {
   position: relative;
   width: 485px;
+}
+
+#choco .info__menu {
+  width: 100%;
+}
+
+#choco .info__menu--space {
+  width: 300px;
 }
 
 #choco .info__list {
@@ -137,10 +134,6 @@ body {
 
 #choco .info__list::before {
   content: "●";
-}
-
-#choco .info__list span {
-  font-size: 1rem;
 }
 
 #choco .info__list--allergy {
@@ -155,6 +148,36 @@ body {
   margin-left: 5px;
   color: #000;
   background-color: #fff;
+}
+
+#choco .info__list--space {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+}
+
+#choco .info__list--space:first-child::before {
+  content: "●";
+}
+
+#choco .info__list--space:nth-child(2)::before {
+  content: "●";
+}
+
+#choco .info__list dl {
+  display: inline;
+}
+
+#choco .info__ttl {
+  display: inline;
+  color: #fff;
+  font-size: 18px;
+}
+
+#choco .info__txt {
+  display: inline;
+  color: #fff;
+  font-size: 1rem;
 }
 
 #choco .quantity {
@@ -202,13 +225,13 @@ body {
   border-left: solid 1px #fff;
 }
 
-#choco .nutrition__name {
+#choco .nutrition__detail dt {
   float: left;
   color: #fff;
   font-size: 18px;
 }
 
-#choco .nutrition__txt {
+#choco .nutrition__detail dd {
   color: #fff;
   text-align: right;
   font-size: 18px;
@@ -231,10 +254,5 @@ body {
 
 #choco .color-y {
   color: #f6cf18;
-}
-
-#choco .space-r {
-  display: block;
-  width: 300px;
 }
 /*# sourceMappingURL=style.css.map */
